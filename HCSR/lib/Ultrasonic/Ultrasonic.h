@@ -1,0 +1,16 @@
+#ifndef ULTRASONIC_H
+#define ULTRASONIC_H
+
+#include <Arduino.h>
+
+class Ultrasonic {
+  private:
+    int trigPin;
+    int echoPin;
+
+  public:
+    Ultrasonic(int trig, int echo);
+    float readDistanceCM();
+};
+
+#endif
